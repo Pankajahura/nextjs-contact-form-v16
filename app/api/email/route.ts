@@ -14,6 +14,8 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    console.log(process.env.MY_EMAIL, process.env.MY_PASSWORD);
+
     const transport = nodemailer.createTransport({
       service: 'gmail',
       /* 
